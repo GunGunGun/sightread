@@ -17,13 +17,13 @@ const inter = Inter({
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     const handleRouteChange = (url: string) => analytics.pageview(url)
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
-  }, [router.events])
+  }, [router.events])*/
 
   if (pageProps.songMetadata) {
     addMetadata(pageProps.songMetadata)
