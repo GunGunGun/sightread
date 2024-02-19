@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 
-import * as analytics from '@/features/analytics'
+//import * as analytics from '@/features/analytics'
 import { TooltipProvider } from '@radix-ui/react-tooltip'
 import { addMetadata } from '@/features/data/library'
 
