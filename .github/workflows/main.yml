@@ -1,0 +1,26 @@
+name: Release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: npm build
+      - run: ls
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: all
+          generate_release_notes: true
+          files: |
+            dist/synchrony-*.js
+            dist/deobfuscate.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
