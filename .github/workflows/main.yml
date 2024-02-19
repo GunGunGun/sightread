@@ -12,7 +12,6 @@ jobs:
         with:
           node-version: '16'
       - run: npm install
-      - run: npm build
       - run: ls
       - name: Create release
         uses: softprops/action-gh-release@v1
