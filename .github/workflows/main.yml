@@ -20,6 +20,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: /home/runner/work/
+          path: /home/runner/work/sightread/sightread/.next/
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v3
