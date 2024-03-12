@@ -9,7 +9,7 @@ module.exports = {
           name: true
       },
       runtimeChunk: true
-    },
-  }
+    }
+  },
   compress: false,
 }
