@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+env:
+  NODE_ENV: development
+  DEPLOY_ENV: development
 jobs:
   push:
     runs-on: ubuntu-latest
