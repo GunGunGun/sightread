@@ -2,6 +2,9 @@
   "name": "@sightread/app",
   "version": "0.8.1",
   "private": true,
+  "optimization": {
+      "minimize": false
+  },
   "devDependencies": {
     "@types/fluent-ffmpeg": "2.1.22",
     "@types/jest": "^29.5.5",
