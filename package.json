@@ -41,7 +41,7 @@
   "scripts": {
     "start": "next start",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build dev",
     "lint": "next lint",
     "format": "prettier --write src/**/*.ts*",
     "gen": "cd scripts && ts-node generate.ts && cd ..",
