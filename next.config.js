@@ -7,10 +7,6 @@ module.exports = (nextConfig) => {
         ...webpackConfig,
         optimization: {
           minimize: false
-        },
-        output: {
-          path: path.resolve(__dirname, 'dist'),
-          chunkFilename: "[name].js",
         }
       };
     }
