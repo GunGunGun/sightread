@@ -1,8 +1,3 @@
-const nextConfig = {
-  build: {
-    optimization: {
-      minimize: false
-    }
-  }
+module.exports = {
+  compress: false,
 }
-module.exports = nextConfig
