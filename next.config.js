@@ -7,7 +7,9 @@ module.exports = (nextConfig) => {
         optimization: {
           minimize: false
         },
-        hashFilenames: false
+        output: {
+          hashFilenames: false
+        }
       };
     }
   };
