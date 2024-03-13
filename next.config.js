@@ -8,7 +8,7 @@ module.exports = (nextConfig) => {
           minimize: false
         },
         output: {
-          chunkFilename: "[name].[ext]",
+          chunkFilename: "[name].js",
         }
       };
     }
