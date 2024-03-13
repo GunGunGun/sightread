@@ -6,9 +6,6 @@ module.exports = (nextConfig) => {
         ...webpackConfig,
         optimization: {
           minimize: false
-        },
-        output: {
-          hashFilenames: false
         }
       };
     }
