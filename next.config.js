@@ -8,6 +8,7 @@ module.exports = (nextConfig) => {
           minimize: false
         },
         output: {
+          test: /\.(js|css)$/,
           filename: "[name].[ext]"
         }
       };
