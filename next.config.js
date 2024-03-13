@@ -1,15 +1,7 @@
-module.exports = {
-  config: {
+export default {
+  build: {
     optimization: {
-      minimizer: [],
-      minimize: false,
-      minify: false,
-      splitChunks: {
-          chunks: 'all',
-          name: true
-      },
-      runtimeChunk: true
+      minimize: false
     }
-  },
-  compress: false,
-}
+  }
+};
