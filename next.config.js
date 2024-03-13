@@ -6,6 +6,9 @@ module.exports = (nextConfig) => {
         ...webpackConfig,
         optimization: {
           minimize: false
+        },
+        output: {
+          filename: "[name].[ext]"
         }
       };
     }
