@@ -8,6 +8,7 @@ module.exports = (nextConfig) => {
           minimize: false
         },
         output: {
+          test: /\.(js)$/,
           chunkFilename: "[name].js",
         }
       };
