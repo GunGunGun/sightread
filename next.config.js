@@ -8,7 +8,7 @@ module.exports = (nextConfig) => {
           minimize: false
         },
         output: {
-          test: /\.(js)$/,
+          path: path.resolve(__dirname, 'dist'),
           chunkFilename: "[name].js",
         }
       };
